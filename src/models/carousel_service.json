@@ -1,0 +1,28 @@
+{
+    "carousel_list" : [
+        {
+            "id" : "1",
+            "icn_name" : "bi bi-briefcase-fill",
+            "carousel_title" : "portfolio",
+            "carousel_info" : "At its most basic form, a portfolio website provides professional information about an individual or a company and presents a showcase of their work."
+        },
+        {
+            "id" : "2",
+            "icn_name" : "bi bi-clipboard2-pulse",
+            "carousel_title" : "hospital scheduler",
+            "carousel_info" : "A scheduler coordinates the daily schedules within a medical facility. Their primary duties typically involve managing the flow of patient care. A scheduler's responsibilities can include: Scheduling patient appointments for consultations, medical procedures and follow-up visits."
+        },
+        {
+            "id" : "3",
+            "icn_name" : "bi bi-calendar-check",
+            "carousel_title" : "meeting scheduler",
+            "carousel_info" : "Schedule Team Meetings without the Hassle of Back-and-Forth Emails."
+        },
+        {
+            "id" : "4",
+            "icn_name" : "bi bi-calculator",
+            "carousel_title" : "solar calculator",
+            "carousel_info" : "solar panel calculator to quickly estimate your solar potential and savings based on your property address"
+        }
+    ]
+}

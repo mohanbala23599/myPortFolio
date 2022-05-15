@@ -1,0 +1,23 @@
+@media screen and (max-width: 768px) {
+    .img-width {
+        height: 150px;
+    }
+}
+
+.p-t-70{
+    padding: 70px 0px 0px 0px;
+}
+.f-weight-700{
+    font-weight: 700;
+}
+
+.p-l-15{
+    padding: 0px 0px 0px 15px;
+}
+
+.p-t-12{
+    padding : 12px 0px 0px 0px;
+}
+.p-t-10{
+    padding: 0px 10px 0px 0px;
+}

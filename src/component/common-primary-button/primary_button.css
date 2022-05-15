@@ -1,0 +1,5 @@
+.bttn_position {
+    border-radius: 25px !important;
+    padding: 8px 25px 12px 25px !important;
+    text-transform: capitalize;
+}

@@ -1,0 +1,21 @@
+{
+    "list-main-title" : "portfolio",
+    "portfolio-list" : [
+        {
+            "img-name" : "sample-laptop.webp",
+            "list-title" : "my portfolio",
+            "badge-year" : "2022",
+            "list-desc" : "A Re-usable portfolio developed with React JS. Easy integration and customizable",
+            "list-sub-desc-one" : "Design by",
+            "list-sub-desc-two" : "Mohana Sundaram S"
+        },
+        {
+            "img-name" : "sample-laptop.webp",
+            "list-title" : "my portfolio",
+            "badge-year" : "2022",
+            "list-desc" : "A Re-usable portfolio developed with React JS. Easy integration and customizable",
+            "list-sub-desc-one" : "Design by",
+            "list-sub-desc-two" : "Mohana Sundaram S"
+        }
+    ]
+}
