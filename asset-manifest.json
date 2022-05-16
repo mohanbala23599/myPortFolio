@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/myPortFolio/static/css/main.1023a8a4.css",
+    "main.js": "/myPortFolio/static/js/main.0529d38b.js",
+    "static/js/787.128fc6e9.chunk.js": "/myPortFolio/static/js/787.128fc6e9.chunk.js",
+    "static/media/bootstrap-icons.woff?": "/myPortFolio/static/media/bootstrap-icons.c1d7432ee75fa194e499.woff",
+    "static/media/bootstrap-icons.woff2?": "/myPortFolio/static/media/bootstrap-icons.a13b815539b49de48d23.woff2",
+    "static/media/revicons.eot": "/myPortFolio/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/myPortFolio/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/sample-laptop.webp": "/myPortFolio/static/media/sample-laptop.2e817d8e2f9ae045540f.webp",
+    "static/media/revicons.woff": "/myPortFolio/static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "/myPortFolio/index.html",
+    "main.1023a8a4.css.map": "/myPortFolio/static/css/main.1023a8a4.css.map",
+    "main.0529d38b.js.map": "/myPortFolio/static/js/main.0529d38b.js.map",
+    "787.128fc6e9.chunk.js.map": "/myPortFolio/static/js/787.128fc6e9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1023a8a4.css",
+    "static/js/main.0529d38b.js"
+  ]
+}
