@@ -14,12 +14,14 @@ import ContactForm from "../../component/common-form/ContactForm";
 const PortfolioView = () => {
     const [introService, setIntroService] = useState({});
     const [carouselData, setCarouselData] = useState([])
-    const [listData, setListData] = useState({})
+    const [listData, setListData] = useState([])
+    const [listTitle, setListTitle] = useState("")
 
     useEffect(() => {
         setIntroService(introduction_service)
         setCarouselData(carousel_service['carousel_list'])
-        setListData(list_service)
+        setListData(list_service["portfolio-list"])
+        setListTitle(list_service["list-main-title"])
     },[introduction_service, carousel_service, list_service])
     
     return(
@@ -36,7 +38,7 @@ const PortfolioView = () => {
                 </div>
                 <hr></hr>
                 <div className="container" style={{padding : "0px 0px 30px 0px"}}>
-                    <PortfolioList serviceData = {listData}/>
+                    <PortfolioList serviceData = {listData} title = {listTitle}/>
                 </div>
                 <div style={{padding : "70px 0px 100px 0px",background : "linear-gradient(to bottom,#7a19f1,#332179)"}}>
                     <div className="container">

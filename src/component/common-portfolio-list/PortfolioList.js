@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import BlueBadge from "../common-badge/BlueBadge";
 import PrimaryButton from "../common-primary-button/PrimaryButton";
 import NoFillButton from "../common-nofill-button/NoFillButton";
@@ -8,15 +8,14 @@ import '../common-portfolio-list/portfolio_list.css';
 const PortfolioList = (props) => {
     const images = require.context('../../assets', true);
     let staticImage = images(`./sample-laptop.webp`);
-    console.log("props portfoliolist",props)
     return(
         <>
-            {props.serviceData['portfolio-list'].map((data, index) => {
+            {props.serviceData.map((data, index) => {
                 return(
                     <div>
                         {index == 0 && 
                         <div className="p-t-70">
-                            <h6 className="f-weight-700 text-uppercase">{props.serviceData['list-main-title']}</h6>
+                            <h6 className="f-weight-700 text-uppercase">{props.title}</h6>
                         </div>}
                         <div className="d-flex align-items-center flex-lg-row flex-md-column flex-sm-column flex-column p-t-70">
                             <div className="image-container col-lg-7 col-md-12 col-sm-12 col-12">
@@ -47,7 +46,7 @@ const PortfolioList = (props) => {
                                 </div>
                             </div>
                         </div>
-                        {index != props.serviceData['portfolio-list'].length - 1 && <hr></hr>}
+                        {index != props.serviceData.length - 1 && <hr></hr>}
                     </div>
                 )
             })}
