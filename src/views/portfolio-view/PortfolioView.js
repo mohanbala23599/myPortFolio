@@ -28,19 +28,33 @@ const PortfolioView = () => {
         <>
             <Layout>
                 <div className="introduction-wrapper-container">
-                    <Introduction serviceData = {introService}/>
+                    <Introduction click = {() => {
+                        try{
+                            let carouselContent = document.getElementById('carousel-content')
+                            carouselContent.scrollIntoView()
+                        }catch(err){
+
+                        }
+                    }} serviceData = {introService}/>
                 </div>
-                <div className="container m-b-80">
+                <div className="container m-b-80" id = "carousel-content">
                     <CarouselControl serviceData = {carouselData}/>
                     <div className="container">
-                        <NoFillButton bttnName = {button_name['carousel_bttn_name']}/>
+                        <NoFillButton click = {() => {
+                            try{
+                                let portfolioList = document.getElementById('portfolio-list')
+                                portfolioList.scrollIntoView()
+                            }catch(err){
+                                
+                            }
+                        }} bttnName = {button_name['carousel_bttn_name']}/>
                     </div>
                 </div>
                 <hr></hr>
-                <div className="container" style={{padding : "0px 0px 30px 0px"}}>
+                <div className="container" id = "portfolio-list" style={{padding : "0px 0px 30px 0px"}}>
                     <PortfolioList serviceData = {listData} title = {listTitle}/>
                 </div>
-                <div style={{padding : "70px 0px 100px 0px",background : "linear-gradient(to bottom,#7a19f1,#332179)"}}>
+                <div id = "contact-form" style={{padding : "70px 0px 100px 0px",background : "linear-gradient(to bottom,#7a19f1,#332179)"}}>
                     <div className="container">
                         <ContactForm/>
                     </div>

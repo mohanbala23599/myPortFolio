@@ -5,7 +5,7 @@ import {Button} from 'react-bootstrap'
 const NoFillButton = (props) => {
     return(
         <>
-            <Button className="bttn_position" variant="outline-primary">{props.bttnName}</Button>
+            <Button onClick = {props.click} className="bttn_position" variant="outline-primary">{props.bttnName}</Button>
         </>
     )
 }

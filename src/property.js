@@ -2,23 +2,18 @@
 export const header_options = [
     {
         id : 1,
-        link : "#",
+        link : "#carousel-content",
         link_name : "services",
     },
     {
         id : 2,
-        link : "#",
+        link : "#portfolio-list",
         link_name : "portfolio",
-    },
-    {
-        id : 3,
-        link : "#",
-        link_name : "pricing"
     }
 ]
 
 //introduction button name
 export const button_name = {
-    intro_bttn_name : "get started",
+    intro_bttn_name : "get",
     carousel_bttn_name : "learn more"
 }

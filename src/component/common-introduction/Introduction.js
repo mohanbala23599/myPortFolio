@@ -12,10 +12,18 @@ const Introduction = (props) => {
             </div>
             <div className="m-t-20">
                 <p className="intro_p">{props.serviceData["intro_desc_p_section_one"]}</p>
-                <p className="intro_p">{props.serviceData["intro_desc_p_section_two"]} <a href="#">{props.serviceData["intro_desc_p_section_two_link"]}</a></p>
+                <p className="intro_p">{props.serviceData["intro_desc_p_section_two"]} <a href="#" onClick={() => {
+                    try{
+                        let contactForm = document.getElementById('contact-form')
+                        contactForm.scrollIntoView()
+                    }
+                    catch(err){
+
+                    }
+                }}>{props.serviceData["intro_desc_p_section_two_link"]}</a></p>
             </div>
             <div className="m-t-25">
-                <GreenButton bttnName = {button_name.intro_bttn_name}/>
+                <GreenButton click = {props.click} bttnName = {button_name.intro_bttn_name}/>
             </div>
         </div>
     )

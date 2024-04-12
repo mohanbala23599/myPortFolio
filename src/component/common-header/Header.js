@@ -34,7 +34,7 @@ const Header = (props) => {
                         <span>{props.title}</span>
                     </div>
                     <div className="p-b-10">
-                    <Button onMouseEnter={toggleChat} onMouseLeave = {toggleChat} className = {toggleChatBool == true ? 'd-flex align-items-center chat-button-active' : 'd-flex align-items-center chat-button-inactive'}>
+                    <Button onClick = {props.navigateChat} onMouseEnter={toggleChat} onMouseLeave = {toggleChat} className = {toggleChatBool == true ? 'd-flex align-items-center chat-button-active' : 'd-flex align-items-center chat-button-inactive'}>
                         <span className={toggleChatBool == true ? 'd-none' : 'chat-active-dot'}><i className="bi bi-circle-fill dot-icon"></i></span>
                         <span className={toggleChatBool == true ? 'chat-now' : 'online'}>{toggleChatBool == true ? 'CHAT NOW' : 'ONLINE'}</span>
                     </Button>

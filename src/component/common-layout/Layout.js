@@ -7,7 +7,15 @@ const Layout = (props) => {
     return(
         <div style = {{height : "100rem"}}>
             <div className="header-container">
-                <Header title = {"Mohana sundaram"} options = {header_options}></Header>
+                <Header navigateChat = {() => {
+                    try{
+                        let contactForm = document.getElementById('contact-form')
+                        contactForm.scrollIntoView()
+                    }
+                    catch(err){
+
+                    }
+                }} title = {"Mohana sundaram"} options = {header_options}></Header>
             </div>
             <div>                
                 {props.children}

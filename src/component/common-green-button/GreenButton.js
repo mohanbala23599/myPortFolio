@@ -5,7 +5,7 @@ import '../common-green-button/green_button.css';
 const GreenButton = (props) => {
     return(
         <>
-            <Button className="bttn_position" variant="warning">{props.bttnName}</Button>{' '}
+            <Button onClick={props.click} className="bttn_position" variant="warning">{props.bttnName}</Button>{' '}
         </>
     )
 }
